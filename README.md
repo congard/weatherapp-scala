@@ -52,3 +52,17 @@ it is less intelligent.
 ## Screenshots
 
 ![Screenshot](pictures/screenshot.png)
+
+## Known issues
+
+### java.lang.NullPointerException: Cannot invoke "com.sun.prism.RTTexture.createGraphics()" because "\<local9\>" is null
+
+According to [chunky-dev.github.io](https://chunky-dev.github.io/docs/support/troubleshooting/#javalangnullpointerexception-cannot-invoke-comsunprismrttexturecreategraphics-because-local9-is-null),
+this problem is often caused by the render canvas size being increased beyond the maximum texture size supported
+by JavaFX, the GPU, or the GPU driver. A potential solution to the problem is to add `-Dprism.order=sw` to the
+Java options.
+
+**Severity**: low (rare issue, cannot be reproduced by me on both Linux & Windows)
+
+**Possible solution**: split WeatherChart's canvas into several
+<br>**Available workaround**: add `-Dprism.order=sw` to the Java options
