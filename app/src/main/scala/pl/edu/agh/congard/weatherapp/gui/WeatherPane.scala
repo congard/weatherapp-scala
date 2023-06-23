@@ -38,6 +38,7 @@ class WeatherPane(
         ScrollPane().also { it =>
             it.setPadding(Insets(0))
             it.setFitToWidth(true)
+            it.setPannable(true)
             it.setMaxHeight(chart.getMaxHeight())
             it.setMinHeight(chart.getMaxHeight())
             it.setContent(chart)
