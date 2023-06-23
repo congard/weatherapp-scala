@@ -3,7 +3,7 @@ package pl.edu.agh.congard.weatherapp.gui
 import javafx.scene.layout.{BorderPane, VBox}
 import javafx.scene.{Node, Scene}
 import javafx.stage.Stage
-import pl.edu.agh.congard.weatherapp.backend.ext.ScopeFunExt
+import pl.edu.agh.congard.weatherapp.backend.ext.also
 
 abstract class Dialog extends Stage {
     private val content = BorderPane().also { it => it.setId("dialog") }

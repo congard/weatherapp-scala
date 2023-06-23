@@ -1,6 +1,6 @@
 package pl.edu.agh.congard.weatherapp.backend.ext
 
-implicit class ScopeFunExt[T](o: T) {
+extension[T](o: T) {
     def let[R](block: (it: T) => R): R =
         block(o)
 

@@ -1,6 +1,6 @@
 package pl.edu.agh.congard.weatherapp.backend.provider
 
-import pl.edu.agh.congard.weatherapp.backend.ext.ScopeFunExt
+import pl.edu.agh.congard.weatherapp.backend.ext.let
 import pl.edu.agh.congard.weatherapp.backend.{GeoPlaceDetails, WeatherDetails}
 
 import java.time.LocalDateTime

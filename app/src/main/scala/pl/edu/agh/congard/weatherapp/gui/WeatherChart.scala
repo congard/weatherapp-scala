@@ -11,7 +11,7 @@ import javafx.scene.text.{Font, TextAlignment}
 import javafx.scene.transform.Affine
 import javafx.util.Duration
 import pl.edu.agh.congard.weatherapp.backend.WeatherDetails
-import pl.edu.agh.congard.weatherapp.backend.ext.ScopeFunExt
+import pl.edu.agh.congard.weatherapp.backend.ext.let
 import pl.edu.agh.congard.weatherapp.backend.unit.TemperatureUnit
 import pl.edu.agh.congard.weatherapp.math.CubicSpline
 

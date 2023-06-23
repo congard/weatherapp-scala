@@ -7,7 +7,7 @@ import javafx.scene.control.{Label, ListCell, ListView, TextField}
 import javafx.scene.layout.VBox
 import javafx.util.Callback
 import pl.edu.agh.congard.weatherapp.backend.GeoPlaceDetails
-import pl.edu.agh.congard.weatherapp.backend.ext.ScopeFunExt
+import pl.edu.agh.congard.weatherapp.backend.ext.{also, ifNotNull}
 import pl.edu.agh.congard.weatherapp.backend.provider.OSMReverseGeocodingProvider
 
 import java.util
@@ -42,7 +42,7 @@ class SelectCityDialog(onCitySelected: GeoPlaceDetails => Unit) extends Dialog {
         )
     })
 
-    setContent(ListView[GeoPlaceDetails].also { it =>
+    setContent(ListView[GeoPlaceDetails]().also { it =>
         it.setItems(items)
 
         it.setOnMouseClicked(event => if (event.getClickCount() == 2) {

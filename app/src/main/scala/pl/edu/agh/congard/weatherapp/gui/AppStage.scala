@@ -5,7 +5,7 @@ import javafx.scene.control.{Button, Label, ScrollPane, Tooltip}
 import javafx.scene.layout.{BorderPane, VBox}
 import javafx.scene.text.{Text, TextFlow}
 import javafx.stage.Stage
-import pl.edu.agh.congard.weatherapp.backend.ext.ScopeFunExt
+import pl.edu.agh.congard.weatherapp.backend.ext.{also, let}
 import pl.edu.agh.congard.weatherapp.backend.provider.SettingsProvider
 import javafx.scene.image.Image
 

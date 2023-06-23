@@ -1,7 +1,7 @@
 package pl.edu.agh.congard.weatherapp.backend.provider
 
 import pl.edu.agh.congard.weatherapp.backend.GeoPlaceDetails
-import pl.edu.agh.congard.weatherapp.backend.ext.ScopeFunExt
+import pl.edu.agh.congard.weatherapp.backend.ext.also
 import upickle.default as upickle
 
 import java.io.File

@@ -7,7 +7,7 @@ import java.nio.charset.Charset
 import scala.collection.mutable.ArrayBuffer
 import upickle.core.LinkedHashMap
 
-implicit class ResponseExtensions(r: Response) {
+extension(r: Response) {
     def asJSONObject: LinkedHashMap[String, ujson.Value] =
         ujson.read(r.asUTFString).obj
         

@@ -1,7 +1,7 @@
 package pl.edu.agh.congard.weatherapp.backend.provider
 
 import pl.edu.agh.congard.weatherapp.backend.WeatherDetails
-import pl.edu.agh.congard.weatherapp.backend.ext.ResponseExtensions
+import pl.edu.agh.congard.weatherapp.backend.ext.{isSuccessful, asJSONObject}
 import pl.edu.agh.congard.weatherapp.backend.unit.{PercentUnit, PrecipitationUnit, TemperatureUnit}
 import requests.Response
 

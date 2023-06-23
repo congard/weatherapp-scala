@@ -1,7 +1,7 @@
 package pl.edu.agh.congard.weatherapp.backend.provider
 
 import pl.edu.agh.congard.weatherapp.backend.GeoPlaceDetails
-import pl.edu.agh.congard.weatherapp.backend.ext.ResponseExtensions
+import pl.edu.agh.congard.weatherapp.backend.ext.{isSuccessful, asJSONArray}
 import requests.Response
 
 import java.nio.charset.Charset

@@ -5,7 +5,7 @@ import javafx.geometry.Insets
 import javafx.scene.control.{Button, Label, ScrollPane, Tooltip}
 import javafx.scene.layout.{BorderPane, Pane, Priority, VBox}
 import pl.edu.agh.congard.weatherapp.backend.GeoPlaceDetails
-import pl.edu.agh.congard.weatherapp.backend.ext.ScopeFunExt
+import pl.edu.agh.congard.weatherapp.backend.ext.also
 import pl.edu.agh.congard.weatherapp.backend.provider.{OpenMeteoWeatherProvider, SettingsProvider, WeatherProvider}
 
 import scala.concurrent.ExecutionContext.Implicits.global

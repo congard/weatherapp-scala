@@ -2,7 +2,7 @@ package pl.edu.agh.congard.weatherapp.gui
 
 import javafx.scene.paint.Color
 import javafx.scene.shape.SVGPath
-import pl.edu.agh.congard.weatherapp.backend.ext.ScopeFunExt
+import pl.edu.agh.congard.weatherapp.backend.ext.also
 
 object Resources {
     val icAdd = SVGPath().also { it =>
